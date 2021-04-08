@@ -82,22 +82,28 @@ footer {
 }
 
 @media only screen and (max-width: 1000px) {
-  .footer-content {
-    max-width: 400px;
-    // background-color: chocolate;
-    flex-direction: column;
-    margin: 0 auto;
-    padding-left: 0px;
-    padding-right: 0px;
+  footer {
+    max-width: 1000px;
+    .footer-content {
+      width: 400px;
+      // background-color: chocolate;
+      flex-direction: column;
+      // margin: 0 auto;
+      justify-content: center;
+      display: flex;
+      // background-color: darkmagenta;
+      // padding-left: 0px;
+      // padding-right: 0px;
 
-    .logo {
-      margin: 0 auto;
-    }
-    .detail {
-      margin: 0 auto;
-    }
-    .info {
-      margin: 0 auto;
+      .logo {
+        margin: 0 auto;
+      }
+      .detail {
+        margin: 0 auto;
+      }
+      .info {
+        margin: 0 auto;
+      }
     }
   }
 }
