@@ -1,0 +1,21 @@
+.about {
+  width: 1400px;
+  height: 900px;
+  background-color: paleturquoise;
+  margin: 0 auto;
+}
+.about .ourstory-content {
+  display: flex;
+  justify-content: space-between;
+}
+.about .ourstory-content .ourstory-pic {
+  width: 700px;
+  height: 900px;
+  background-color: mediumpurple;
+}
+.about .ourstory-content .ourstory-text {
+  padding: 50px;
+  width: 700px;
+  height: 900px;
+  background-color: palevioletred;
+}

@@ -1,0 +1,168 @@
+.about {
+  max-width: 1400px;
+  min-height: 1600px;
+  //   background-color: paleturquoise;
+  margin: 0 auto;
+
+  .ourstory-content {
+    margin-top: 50px;
+    min-height: 520px;
+    display: flex;
+    justify-content: space-between;
+    .ourstory-pic {
+      width: 700px;
+      height: 520px;
+      // background-color: mediumpurple;
+      background-image: url(../images/sheep.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .ourstory-text {
+      padding: 50px;
+      width: 700px;
+      min-height: 500px;
+      background-color: $site-gold;
+      text-align: center;
+      h1 {
+        font-size: 40px;
+        color: $site-darkblue;
+        font-family: poppinsSB;
+      }
+      h4 {
+        font-size: 20px;
+        color: $site-darkblue;
+        font-family: poppins;
+      }
+
+      p {
+        font-size: 16px;
+        color: $site-darkblue;
+        padding-top: 30px;
+        font-family: poppinsL;
+      }
+    }
+  }
+
+  .aboutfarm {
+    max-width: 700px;
+    min-height: 400px;
+    margin: 50px auto 0 auto;
+    // background-color: mediumspringgreen;
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+      color: $site-brown;
+      font-family: poppinssb;
+    }
+    p {
+      padding: 10px;
+      font-size: 16px;
+      font-family: poppinsL;
+    }
+
+    .button {
+      width: 120px;
+      height: 50px;
+      background-color: $site-darkblue;
+      border-radius: 5px;
+      //   text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+
+      a {
+        text-decoration: none;
+        color: $site-white;
+        font-size: 15px;
+        font-family: poppins;
+      }
+    }
+  }
+
+  .wedo-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .wedo-text {
+      padding: 50px;
+      max-width: 700px;
+      min-height: 500px;
+      background-color: $site-gold;
+      text-align: center;
+      h1 {
+        font-size: 40px;
+        color: $site-darkblue;
+        font-family: poppinsSB;
+      }
+      h4 {
+        font-size: 20px;
+        color: $site-darkblue;
+        font-family: poppins;
+      }
+
+      p {
+        font-size: 16px;
+        font-family: poppinsL;
+        color: $site-darkblue;
+        padding-top: 30px;
+      }
+    }
+    .wedo-pic {
+      width: 700px;
+      height: 500px;
+      //   background-color: mediumpurple;
+      background-image: url(../images/cattle.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .ourstory-content {
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+    // padding-left: 0px;
+    // padding-right: 0px;
+
+    .ourstory-pic {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .ourstory-text {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .wedo-content {
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+    // padding-left: 0px;
+    // padding-right: 0px;
+
+    .wedo-pic {
+      max-width: 500px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    .wedo-text {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .aboutfarm {
+    padding: 15px;
+  }
+}

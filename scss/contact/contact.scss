@@ -1,0 +1,190 @@
+.contact {
+  max-width: 800px;
+  min-height: 720px;
+  //   background-color: $site-gold;
+  margin: 50px auto;
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: poppinsSB;
+    padding: 20px;
+    color: $site-gold;
+  }
+
+  .message {
+    width: 420px;
+    // background-color: brown;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    .border {
+      width: 200px;
+      //   background-color: blueviolet;
+      text-align: center;
+      border-right: $site-darkblue 2px solid;
+      h2 {
+        width: 200px;
+        text-align: center;
+        color: $site-darkblue;
+        font-size: 20px;
+        font-family: poppins;
+      }
+    }
+
+    .border2 {
+      width: 200px;
+      //   background-color: blueviolet;
+      text-align: center;
+
+      h2 {
+        width: 200px;
+        text-align: center;
+        color: $site-darkblue;
+        font-size: 20px;
+        font-family: poppins;
+      }
+    }
+  }
+
+  .name-phone {
+    max-width: 600px;
+    min-height: 100px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .name {
+      width: 200px;
+      height: 20px;
+      //   background-color: chocolate;
+      color: $site-gold;
+      font-size: 20px;
+      font-family: poppins;
+
+      input {
+        // background-color: $site-gold;
+        display: block;
+        width: 200px;
+        height: 40px;
+        border: $site-darkblue 3px solid;
+        margin: -10px auto;
+        color: $site-darkblue;
+        font-family: poppinsL;
+        font-size: 16px;
+      }
+    }
+    .phone {
+      width: 200px;
+      height: 60px;
+      color: $site-gold;
+      font-size: 20px;
+      font-family: poppins;
+
+      input {
+        // background-color: $site-gold;
+        display: block;
+        width: 200px;
+        height: 40px;
+        border: $site-darkblue 3px solid;
+        margin: -10px auto;
+        color: $site-darkblue;
+        font-family: poppinsL;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .email {
+    max-width: 600px;
+    margin: 20px auto;
+    min-height: 60px;
+    color: $site-gold;
+    font-size: 20px;
+    font-family: poppins;
+
+    input {
+      //   background-color: $site-gold;
+      display: block;
+      width: 600px;
+      height: 40px;
+      border: $site-darkblue 3px solid;
+      margin: -10px auto;
+      color: $site-darkblue;
+      font-family: poppinsL;
+      font-size: 16px;
+    }
+  }
+
+  .entry {
+    max-width: 600px;
+    margin: 50px auto;
+    min-height: 150px;
+    color: $site-gold;
+    font-size: 20px;
+    font-family: poppins;
+
+    // background-color: cornflowerblue;
+    input {
+      //   background-color: $site-gold;
+      display: block;
+      width: 600px;
+      height: 120px;
+      border: $site-darkblue 3px solid;
+      margin: -10px auto;
+      color: $site-darkblue;
+      font-family: poppinsL;
+      font-size: 16px;
+    }
+  }
+
+  .button {
+    width: 150px;
+    margin: 0 auto;
+    height: 50px;
+    background-color: $site-darkblue;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: $site-white;
+      font-family: poppins;
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .name-phone {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+    // background-color: cornflowerblue;
+  }
+
+  .email {
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+    // background-color: darkcyan;
+
+    input {
+      max-width: 200px;
+    }
+  }
+  .entry {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    // background-color: darkgreen;
+
+    input {
+      max-width: 200px;
+    }
+  }
+}

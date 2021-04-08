@@ -1,0 +1,932 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: poppinsSB;
+  src: url(../css/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppinsL;
+  src: url(../css/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../css/fonts/Poppins-Regular.ttf);
+}
+nav {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding: 20px;
+}
+nav .links {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: poppinsL;
+  font-size: 16px;
+}
+nav .logo {
+  background-image: url(../images/logo.png);
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav .login {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  height: 60px;
+  align-items: center;
+}
+nav .login .loginicon {
+  background-image: url(../images/login.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+nav .login p {
+  color: #ffffff;
+  padding-top: 15px;
+  font-family: poppinsL;
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    max-width: 700px;
+    flex-direction: column;
+  }
+  nav .links {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  nav .links a {
+    padding-bottom: 5px;
+  }
+}
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .hero-content {
+  height: 350px;
+  /* background-color: rgba(200, 100, 100, 0.5); */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.hero .hero-content h1 {
+  color: white;
+}
+.hero .hero-content .page-name {
+  text-transform: capitalize;
+}
+
+.home-hero-image {
+  height: 300px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero/home-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-hero-image {
+  height: 300px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero/about-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products-hero-image {
+  height: 300px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero/products-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-hero-image {
+  height: 300px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero/contact-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  max-width: 1400px;
+  min-height: 900px;
+  margin: 0 auto;
+}
+.home .header {
+  max-width: 475px;
+  min-height: 200px;
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+.home .header h3 {
+  color: #452D15;
+  font-size: 24px;
+  font-family: poppinsL;
+}
+.home .header h1 {
+  color: #452D15;
+  font-size: 50px;
+  border-bottom: #452D15 2px solid;
+  border-top: #452D15 2px solid;
+  padding: 10px;
+  font-family: poppinsSB;
+}
+.home .home-content {
+  max-width: 1400px;
+  min-height: 600px;
+  margin-top: 50px;
+  display: flex;
+}
+.home .home-content .about-section {
+  width: 475px;
+  height: 600px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/aboutchicken.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.home .home-content .about-section .box {
+  width: 250px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+}
+.home .home-content .about-section .box a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #452D15;
+  font-family: poppins;
+}
+.home .home-content .products-section {
+  width: 475px;
+  height: 600px;
+  background-color: #CA8E2E;
+  padding-top: 60px;
+}
+.home .home-content .products-section h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #13262A;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: poppinsSB;
+}
+.home .home-content .products-section p {
+  font-size: 20px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  font-family: poppinsL;
+}
+.home .home-content .products-section .button {
+  width: 150px;
+  height: 50px;
+  background-color: #4A7669;
+  margin: 0 auto;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.home .home-content .products-section .button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: poppins;
+}
+.home .home-content .contact-section {
+  width: 475px;
+  height: 600px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cows.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.home .home-content .contact-section .box {
+  width: 250px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+}
+.home .home-content .contact-section .box a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #452D15;
+  font-family: poppins;
+}
+
+.quote-holder {
+  max-width: 1400px;
+  min-height: 550px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.quote-holder h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #452D15;
+  font-family: poppinsSB;
+}
+.quote-holder .quote {
+  width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.quote-holder .quote p {
+  color: #13262A;
+  font-size: 16px;
+  font-family: poppinsL;
+}
+.quote-holder .quote h4 {
+  color: #CA8E2E;
+  text-align: right;
+  font-size: 20px;
+  font-family: poppins;
+}
+
+@media only screen and (max-width: 1350px) {
+  .home-content {
+    width: 475px;
+    flex-direction: column;
+    margin: 100px auto 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .home-content .about-section {
+    margin-bottom: 20px;
+  }
+  .home-content .products-section {
+    margin-bottom: 20px;
+  }
+  .home-content .contact-section {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .quote-holder {
+    width: 475px;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .quote-holder p {
+    width: 350px;
+    margin-right: 50px;
+    padding-left: 30px;
+  }
+  .quote-holder h4 {
+    margin-right: 150px;
+  }
+}
+footer {
+  background-color: #13262A;
+  max-width: 1800px;
+  min-height: 230px;
+  margin: 0 auto;
+}
+footer .footer-content {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .logo {
+  background-image: url(../images/logo.png);
+  width: 170px;
+  height: 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer-content .detail {
+  width: 300px;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+}
+footer .footer-content .detail h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: poppins;
+}
+footer .footer-content .detail p {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: poppinsL;
+}
+footer .footer-content .info {
+  padding-top: 70px;
+  align-items: center;
+  width: 200px;
+}
+footer .footer-content .info .social {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .info .social .facebook {
+  background-image: url(../images/facebook.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+footer .footer-content .info .social .instagram {
+  background-image: url(../images/instagram.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+footer .footer-content .info .social .twitter {
+  background-image: url(../images/twitter.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+footer .footer-content .info p {
+  color: #ffffff;
+  font-size: 12px;
+  padding-top: 30px;
+  text-align: center;
+  font-family: poppinsL;
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer-content {
+    max-width: 400px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-content .logo {
+    margin: 0 auto;
+  }
+  .footer-content .detail {
+    margin: 0 auto;
+  }
+  .footer-content .info {
+    margin: 0 auto;
+  }
+}
+.about {
+  max-width: 1400px;
+  min-height: 1600px;
+  margin: 0 auto;
+}
+.about .ourstory-content {
+  margin-top: 50px;
+  min-height: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+.about .ourstory-content .ourstory-pic {
+  width: 700px;
+  height: 520px;
+  background-image: url(../images/sheep.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .ourstory-content .ourstory-text {
+  padding: 50px;
+  width: 700px;
+  min-height: 500px;
+  background-color: #CA8E2E;
+  text-align: center;
+}
+.about .ourstory-content .ourstory-text h1 {
+  font-size: 40px;
+  color: #13262A;
+  font-family: poppinsSB;
+}
+.about .ourstory-content .ourstory-text h4 {
+  font-size: 20px;
+  color: #13262A;
+  font-family: poppins;
+}
+.about .ourstory-content .ourstory-text p {
+  font-size: 16px;
+  color: #13262A;
+  padding-top: 30px;
+  font-family: poppinsL;
+}
+.about .aboutfarm {
+  max-width: 700px;
+  min-height: 400px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+.about .aboutfarm h1 {
+  font-size: 40px;
+  color: #452D15;
+  font-family: poppinssb;
+}
+.about .aboutfarm p {
+  padding: 10px;
+  font-size: 16px;
+  font-family: poppinsL;
+}
+.about .aboutfarm .button {
+  width: 120px;
+  height: 50px;
+  background-color: #13262A;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.about .aboutfarm .button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: poppins;
+}
+.about .wedo-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.about .wedo-content .wedo-text {
+  padding: 50px;
+  max-width: 700px;
+  min-height: 500px;
+  background-color: #CA8E2E;
+  text-align: center;
+}
+.about .wedo-content .wedo-text h1 {
+  font-size: 40px;
+  color: #13262A;
+  font-family: poppinsSB;
+}
+.about .wedo-content .wedo-text h4 {
+  font-size: 20px;
+  color: #13262A;
+  font-family: poppins;
+}
+.about .wedo-content .wedo-text p {
+  font-size: 16px;
+  font-family: poppinsL;
+  color: #13262A;
+  padding-top: 30px;
+}
+.about .wedo-content .wedo-pic {
+  width: 700px;
+  height: 500px;
+  background-image: url(../images/cattle.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1370px) {
+  .ourstory-content {
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .ourstory-content .ourstory-pic {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .ourstory-content .ourstory-text {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .wedo-content {
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .wedo-content .wedo-pic {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .wedo-content .wedo-text {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .aboutfarm {
+    padding: 15px;
+  }
+}
+.products {
+  padding-top: 50px;
+  max-width: 1400px;
+  min-height: 1400px;
+  margin: 50px auto 0 auto;
+}
+.products h1 {
+  text-align: center;
+  color: #452D15;
+  font-size: 40px;
+  font-family: poppinsSB;
+}
+.products .image-holder {
+  padding-top: 30px;
+  width: 1400px;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.products .image-holder .item {
+  width: 200px;
+  height: 350px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.products .image-holder .item h2 {
+  color: #4A7669;
+  font-size: 22px;
+  font-family: poppins;
+}
+.products .image-holder .item p {
+  color: #4A7669;
+  font-size: 16px;
+  font-family: poppinsL;
+}
+.products .image-holder .item .chicken {
+  background-image: url(../images/products/chicken.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .chick {
+  background-image: url(../images/products/chick.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .rooster {
+  background-image: url(../images/products/rooster.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .milk {
+  background-image: url(../images/products/milk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .cocomilk {
+  background-image: url(../images/products/cocomilk2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .butter {
+  background-image: url(../images/products/butter.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .icecream {
+  background-image: url(../images/products/icecream.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .icecreamv {
+  background-image: url(../images/products/icecreamv.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .icecreamc {
+  background-image: url(../images/products/icecreamc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder .item .icecreams {
+  background-image: url(../images/products/icecreams.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder2 {
+  padding-top: 30px;
+  width: 920px;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.products .image-holder2 .item {
+  width: 200px;
+  height: 350px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.products .image-holder2 .item h2 {
+  color: #4A7669;
+  font-size: 22px;
+  font-family: poppins;
+}
+.products .image-holder2 .item p {
+  color: #4A7669;
+  font-size: 16px;
+  font-family: poppinsL;
+}
+.products .image-holder2 .item .eggs {
+  background-image: url(../images/products/eggs.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.products .image-holder2 .item .eggs6 {
+  background-image: url(../images/products/eggsix.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .products {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .products .image-holder {
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .products .image-holder .item {
+    margin: 0 auto;
+    width: 200px;
+  }
+  .products .image-holder2 {
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .products .image-holder2 .item {
+    margin: 0 auto;
+    width: 200px;
+  }
+  .products .ourstory-pic {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .products .ourstory-text {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+.contact {
+  max-width: 800px;
+  min-height: 720px;
+  margin: 50px auto;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: poppinsSB;
+  padding: 20px;
+  color: #CA8E2E;
+}
+.contact .message {
+  width: 420px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.contact .message .border {
+  width: 200px;
+  text-align: center;
+  border-right: #13262A 2px solid;
+}
+.contact .message .border h2 {
+  width: 200px;
+  text-align: center;
+  color: #13262A;
+  font-size: 20px;
+  font-family: poppins;
+}
+.contact .message .border2 {
+  width: 200px;
+  text-align: center;
+}
+.contact .message .border2 h2 {
+  width: 200px;
+  text-align: center;
+  color: #13262A;
+  font-size: 20px;
+  font-family: poppins;
+}
+.contact .name-phone {
+  max-width: 600px;
+  min-height: 100px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contact .name-phone .name {
+  width: 200px;
+  height: 20px;
+  color: #CA8E2E;
+  font-size: 20px;
+  font-family: poppins;
+}
+.contact .name-phone .name input {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: #13262A 3px solid;
+  margin: -10px auto;
+  color: #13262A;
+  font-family: poppinsL;
+  font-size: 16px;
+}
+.contact .name-phone .phone {
+  width: 200px;
+  height: 60px;
+  color: #CA8E2E;
+  font-size: 20px;
+  font-family: poppins;
+}
+.contact .name-phone .phone input {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: #13262A 3px solid;
+  margin: -10px auto;
+  color: #13262A;
+  font-family: poppinsL;
+  font-size: 16px;
+}
+.contact .email {
+  max-width: 600px;
+  margin: 20px auto;
+  min-height: 60px;
+  color: #CA8E2E;
+  font-size: 20px;
+  font-family: poppins;
+}
+.contact .email input {
+  display: block;
+  width: 600px;
+  height: 40px;
+  border: #13262A 3px solid;
+  margin: -10px auto;
+  color: #13262A;
+  font-family: poppinsL;
+  font-size: 16px;
+}
+.contact .entry {
+  max-width: 600px;
+  margin: 50px auto;
+  min-height: 150px;
+  color: #CA8E2E;
+  font-size: 20px;
+  font-family: poppins;
+}
+.contact .entry input {
+  display: block;
+  width: 600px;
+  height: 120px;
+  border: #13262A 3px solid;
+  margin: -10px auto;
+  color: #13262A;
+  font-family: poppinsL;
+  font-size: 16px;
+}
+.contact .button {
+  width: 150px;
+  margin: 0 auto;
+  height: 50px;
+  background-color: #13262A;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.contact .button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: poppins;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .name-phone {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+  }
+
+  .email {
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+  }
+  .email input {
+    max-width: 200px;
+  }
+
+  .entry {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+  }
+  .entry input {
+    max-width: 200px;
+  }
+}

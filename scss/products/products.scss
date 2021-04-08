@@ -1,0 +1,214 @@
+.products {
+  padding-top: 50px;
+  max-width: 1400px;
+  min-height: 1400px;
+  margin: 50px auto 0 auto;
+  //   background-color: palegoldenrod;
+
+  h1 {
+    text-align: center;
+    color: $site-brown;
+    font-size: 40px;
+    font-family: poppinsSB;
+  }
+
+  .image-holder {
+    padding-top: 30px;
+    width: 1400px;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+
+    .item {
+      width: 200px;
+      height: 350px;
+      text-align: center;
+      margin-bottom: 50px;
+      h2 {
+        color: $site-green;
+        font-size: 22px;
+        font-family: poppins;
+      }
+
+      p {
+        color: $site-green;
+        font-size: 16px;
+        font-family: poppinsL;
+      }
+
+      .chicken {
+        background-image: url(../images/products/chicken.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+
+      .chick {
+        background-image: url(../images/products/chick.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+      .rooster {
+        background-image: url(../images/products/rooster.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+
+      .milk {
+        background-image: url(../images/products/milk.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+
+      .cocomilk {
+        background-image: url(../images/products/cocomilk2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+
+      .butter {
+        background-image: url(../images/products/butter.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+
+      .icecream {
+        background-image: url(../images/products/icecream.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+
+      .icecreamv {
+        background-image: url(../images/products/icecreamv.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+
+      .icecreamc {
+        background-image: url(../images/products/icecreamc.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+
+      .icecreams {
+        background-image: url(../images/products/icecreams.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  .image-holder2 {
+    padding-top: 30px;
+    width: 920px;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    .item {
+      width: 200px;
+      height: 350px;
+      text-align: center;
+      margin-bottom: 50px;
+      h2 {
+        color: $site-green;
+        font-size: 22px;
+        font-family: poppins;
+      }
+
+      p {
+        color: $site-green;
+        font-size: 16px;
+        font-family: poppinsL;
+      }
+
+      .eggs {
+        background-image: url(../images/products/eggs.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+      .eggs6 {
+        background-image: url(../images/products/eggsix.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .products {
+    width: 500px;
+    margin: 0 auto;
+
+    .image-holder {
+      width: 500px;
+      margin: 0 auto;
+      // background-color: chocolate;
+      flex-direction: column;
+
+      .item {
+        margin: 0 auto;
+        width: 200px;
+        // background-color: cornflowerblue;
+      }
+    }
+    .image-holder2 {
+      width: 500px;
+      margin: 0 auto;
+      // background-color: chocolate;
+      flex-direction: column;
+
+      .item {
+        margin: 0 auto;
+        width: 200px;
+        // background-color: cornflowerblue;
+      }
+    }
+    // padding-left: 0px;
+    // padding-right: 0px;
+
+    .ourstory-pic {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .ourstory-text {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}

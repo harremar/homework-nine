@@ -1,0 +1,222 @@
+.home {
+  max-width: 1400px;
+  min-height: 900px;
+  // background-color: black;
+  margin: 0 auto;
+
+  .header {
+    max-width: 475px;
+    min-height: 200px;
+    padding-top: 40px;
+    // background-color: blue;
+    margin: 0 auto;
+    text-align: center;
+    h3 {
+      color: $site-brown;
+      font-size: 24px;
+      font-family: poppinsL;
+    }
+    h1 {
+      color: $site-brown;
+      font-size: 50px;
+      border-bottom: $site-brown 2px solid;
+      border-top: $site-brown 2px solid;
+      padding: 10px;
+      font-family: poppinsSB;
+    }
+  }
+
+  .home-content {
+    max-width: 1400px;
+    min-height: 600px;
+    // background-color: blueviolet;
+    margin-top: 50px;
+    display: flex;
+    // margin: 0 auto;
+
+    .about-section {
+      width: 475px;
+      height: 600px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(../images/aboutchicken.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+
+      .box {
+        width: 250px;
+        height: 120px;
+        margin: 0 auto;
+        background-color: $site-white;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 5px;
+
+        a {
+          text-decoration: none;
+          font-size: 24px;
+          color: $site-brown;
+          font-family: poppins;
+        }
+      }
+    }
+
+    .products-section {
+      width: 475px;
+      height: 600px;
+      background-color: $site-gold;
+      padding-top: 60px;
+
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        color: $site-darkblue;
+        width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        font-family: poppinsSB;
+      }
+      p {
+        font-size: 20px;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        font-family: poppinsL;
+      }
+
+      .button {
+        width: 150px;
+        height: 50px;
+        background-color: $site-green;
+        margin: 0 auto;
+        border-radius: 5px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+        a {
+          text-decoration: none;
+          color: $site-white;
+          font-size: 20px;
+          font-family: poppins;
+        }
+      }
+    }
+
+    .contact-section {
+      width: 475px;
+      height: 600px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(../images/cows.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+
+      .box {
+        width: 250px;
+        height: 120px;
+        margin: 0 auto;
+        background-color: $site-white;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 5px;
+        a {
+          text-decoration: none;
+          font-size: 24px;
+          color: $site-brown;
+          font-family: poppins;
+        }
+      }
+    }
+  }
+}
+
+.quote-holder {
+  // background-color: darkcyan;
+  max-width: 1400px;
+  min-height: 550px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: $site-brown;
+    font-family: poppinsSB;
+  }
+
+  .quote {
+    width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    p {
+      color: $site-darkblue;
+      font-size: 16px;
+      font-family: poppinsL;
+    }
+    h4 {
+      color: $site-gold;
+      text-align: right;
+      font-size: 20px;
+      font-family: poppins;
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .home-content {
+    width: 475px;
+    flex-direction: column;
+    margin: 100px auto 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    .about-section {
+      margin-bottom: 20px;
+    }
+    .products-section {
+      margin-bottom: 20px;
+    }
+    .contact-section {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .quote-holder {
+    width: 475px;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    // background-color: blueviolet;
+
+    p {
+      width: 350px;
+      margin-right: 50px;
+      padding-left: 30px;
+      // background-color: chocolate;
+    }
+    h4 {
+      margin-right: 150px;
+    }
+  }
+}
